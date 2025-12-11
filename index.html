@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopasky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KemenKolam</h1>
+        <p>Kementrian Kopi Malam</p>
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah Pemuda Yang Suka Kopi</p>
+        </div>
+
+        <div class="card">
+            <h2>Tempat KemenKolam</h2>
+            <ul>
+                <li>Namu Mojokerto</li>
+                <li>Latarmu</li>
+                <li>Doa Ayah</li>
+                <li>Nara Story</li>
+                <li>Darul Jagoo</li>
+                <li>Janji Manis</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Aplikasi yang Dibutuhkan untuk Mengelola Web / Bisnis </h2>
+            <ul>
+                <li><strong>Canva</strong> – membuat banner & katalog.</li>
+                <li><strong>CapCut</strong> – editing video.</li>
+                <li><strong>Instagram</strong> – portofolio rias.</li>
+                <li><strong>WhatsApp Business</strong> – booking & auto-reply.</li>
+                <li><strong>Google Calendar</strong> – mencatat jadwal rias.</li>
+                <li><strong>Google Maps</strong> – lokasi studio rias.</li>
+                <li><strong>PhotoRoom / Lightroom</strong> – edit foto profesional.</li>
+                <li><strong>Website Hosting</strong> (Opsional) – Hostinger, Netlify, dll.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Kontak</h2>
+            <p>Hubungi kami untuk booking dan konsultasi:</p>
+            <p><strong>WhatsApp:</strong> 08xx-xxxx-xxxx</p>
+            <p><strong>Instagram:</strong> Kemenkolam</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Kemenkolam Profesional. All Rights Reserved.
+    </footer>
+	<script>
+// SCROLL REVEAL
+const cards = document.querySelectorAll('.card');
+
+function revealOnScroll() {
+    cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            card.classList.add('reveal');
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+// TYPING EFFECT UNTUK TITLE
+document.querySelector("h1").classList.add("typing");
+</script>
+
+</body>
+</html>
